@@ -1,4 +1,4 @@
-# DeferredAttribute
+# DeferredAttribute [![Build Status](https://travis-ci.org/mceachen/deferred_attribute.png?branch=master)](https://travis-ci.org/mceachen/deferred_attribute)
 
 The common ruby idiom for [lazy initialization](http://en.wikipedia.org/wiki/Lazy_initialization)
 looks like this:
