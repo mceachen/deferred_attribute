@@ -11,12 +11,12 @@ class Example
 end
 ```
 
-If ```some_expensive_task``` can return a "falsy" value (like ```nil``` or ```false```), this doesn't work correctly.
+If ```some_expensive_task``` can return a "falsy" value (like ```nil``` or ```false```), this
+doesn't work correctly—the prior [memoized](http://en.wikipedia.org/wiki/Memoization) value of
+```some_expensive_task``` will be ignored, and every subsequent call to ```field``` will also call
+```some_expensive_task```.
 
-The prior [memoized](http://en.wikipedia.org/wiki/Memoization) value of ```some_expensive_task``` will
-be ignored, and every call to ```field``` will incant ```some_expensive_task```.
-
-__DeferredAttribute__ aims to usurp your misbegotten love of ```||=```.
+__DeferredAttribute aims to usurp your misbegotten love of ```||=```.__
 
 
 ## Usage
