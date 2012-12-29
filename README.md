@@ -39,12 +39,14 @@ Calling ```Example.new.field``` will delegate and memoize the result of ```some_
 
 You can customize the name of the expensive operation method by using the ```:with``` option:
 
+``` ruby
 class Example2
   include DeferredAttribute
   deferred_attribute :field, :with => :some_expensive_task
   def some_expensive_task
   end
 end
+```
 
 ## Installation
 
