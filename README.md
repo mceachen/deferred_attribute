@@ -49,6 +49,10 @@ class Example2
     # cogitation
   end
 end
+
+e = Example2.new
+e.field # will call some_expensive_task and memoize
+e.field # will return memoized value
 ```
 
 ## Installation
