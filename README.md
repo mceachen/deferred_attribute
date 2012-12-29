@@ -27,6 +27,7 @@ the ivar setting with ||=.
 class Example
   include DeferredAttribute
   deferred_attribute :field
+
   def get_field
     some_expensive_task()
   end
@@ -43,7 +44,9 @@ You can customize the name of the expensive operation method by using the ```:wi
 class Example2
   include DeferredAttribute
   deferred_attribute :field, :with => :some_expensive_task
+
   def some_expensive_task
+    # cogitation
   end
 end
 ```
