@@ -13,11 +13,10 @@ end
 
 If ```some_expensive_task``` can return a "falsy" value (like ```nil``` or ```false```), this
 doesn't work correctly—the prior [memoized](http://en.wikipedia.org/wiki/Memoization) value of
-```some_expensive_task``` will be ignored, and every subsequent call to ```field``` will also call
-```some_expensive_task```.
+```some_expensive_task``` will be ignored, and every subsequent call to ```field``` will result
+in another call to ```some_expensive_task```.
 
 <em>DeferredAttribute aims to usurp your misbegotten love of ```||=```.</em>
-
 
 ## Usage
 
