@@ -52,7 +52,7 @@ end
 
 e = Example2.new
 e.field # will call some_expensive_task and memoize
-e.field # will return memoized value
+e.field # will return the prior, memoized value
 ```
 
 ## Installation
