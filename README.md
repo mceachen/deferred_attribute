@@ -16,7 +16,7 @@ doesn't work correctly—the prior [memoized](http://en.wikipedia.org/wiki/Memoi
 ```some_expensive_task``` will be ignored, and every subsequent call to ```field``` will result
 in another call to ```some_expensive_task```.
 
-<em>DeferredAttribute aims to usurp your misbegotten love of ```||=```.</em>
+<strong>DeferredAttribute aims to usurp your misbegotten love of ```||=```.</strong>
 
 ## Usage
 
