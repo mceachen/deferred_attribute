@@ -1,1 +1,1 @@
-Renamed to [attr_memoized](https://github.com/mceachen/attr_memoized)
+Renamed to [attr_memoizer](https://github.com/mceachen/attr_memoizer)
